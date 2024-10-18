@@ -9,6 +9,7 @@
     { "src": "/stilo.css", "dest": "/baixar videos do yt/frontend/stilo.css" },
     { "src": "/(.*)", "dest": "/baixar videos do yt/frontend/index.html" },
     { "src": "/imagens/(.*)", "dest": "/baixar videos do yt/frontend/imagens/$1" },
-    { "src": "/script.js", "dest": "/baixar videos do yt/frontend/script.js" }
+    { "src": "/script.js", "dest": "/baixar videos do yt/frontend/script.js" },
+    { "src": "/config.js", "dest": "/baixar videos do yt/frontend/config.js" }
   ]
 }
