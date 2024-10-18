@@ -14,7 +14,7 @@ const app = express();
 const upload = multer({ dest: 'uploads/' });
 
 app.use(cors({
-  origin: 'http://127.0.0.1:5503',
+  origin: ['http://127.0.0.1:5503', 'https://byte-melhorar-imagem-com-ia.vercel.app'],
   methods: ['GET', 'POST'],
   allowedHeaders: ['Content-Type', 'Authorization']
 }));

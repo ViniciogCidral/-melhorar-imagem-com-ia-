@@ -5,8 +5,7 @@
     { "src": "baixar videos do yt/frontend/**", "use": "@vercel/static" }
   ],
   "routes": [
-    { "src": "/api/(.*)"  },
-    { "src": "/(.*)" }
+    { "src": "/api/(.*)", "dest": "backend/server.js" },
+    { "src": "/(.*)", "dest": "/baixar videos do yt/frontend/index.html" }
   ]
 }
-

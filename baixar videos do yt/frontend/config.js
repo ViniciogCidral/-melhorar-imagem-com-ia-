@@ -1,5 +1,5 @@
 const config = {
-    backendUrl: 'http://localhost:3000',
+    backendUrl: '/api',
     pixelCutApiUrl: 'https://api.developer.pixelcut.ai/v1'
 };
 
