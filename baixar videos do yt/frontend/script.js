@@ -84,7 +84,7 @@ document.addEventListener('DOMContentLoaded', () => {
         console.log('Opção:', option);
 
         try {
-            const response = await fetch('http://localhost:3000/v1/upscale', {
+            const response = await fetch(`${config.backendUrl}/v1/upscale`, {
                 method: 'POST',
                 body: formData
             });
