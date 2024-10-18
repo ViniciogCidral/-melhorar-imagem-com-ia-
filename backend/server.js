@@ -7,6 +7,8 @@ import axios from 'axios';
 import FormData from 'form-data';
 import { createReadStream, writeFileSync } from 'fs';
 import path from 'path';
+import dotenv from 'dotenv';
+dotenv.config();
 
 const app = express();
 const upload = multer({ dest: 'uploads/' });
@@ -54,7 +56,7 @@ app.post('/v1/upscale', upload.single('image'), async (req, res) => {
       headers: { 
         'Content-Type': 'multipart/form-data', 
         'Accept': 'image/*, \'image/*\'', 
-        'X-API-KEY': 'sk_3f785a7c616d495b98370426037adf08', 
+        'X-API-KEY': process.env.PIXELCUT_API_KEY, 
         ...data.getHeaders()
       },
       data : data,
